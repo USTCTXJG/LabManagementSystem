@@ -44,8 +44,14 @@ class Client{
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally{
-            socket.close();
-        }
+            if(socket!=null){
+                try{
+                    socket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
 
+        }
     }
 }
