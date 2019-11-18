@@ -4,7 +4,7 @@ import java.net.Socket;
 
 public class SocketClient {
     private static String HOST = "127.0.0.1";
-    private static int PORT = 8080;
+    private static int PORT = 1234;
 
     public SocketClient() {
     }
